@@ -4,6 +4,7 @@
 2. [Github_Account](www.github.com)
 3. [Heroku](https://www.heroku.com/)
 4. [Git](https://git-scm.com/download/win)
+5. [Postman](https://www.postman.com/)
 
 Create new environment for the project
 
