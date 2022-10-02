@@ -11,10 +11,10 @@ Create new environment for the project
 conda create -p venv python==3.7 -y
 ```
 ## Required Libraries
-#### 1.sklearn
-#### 2.matplotlib
-#### 3.seaborn
-#### 4.Flask
-#### 5.pandas
-#### 6.numpy
-#### 7.pickle
+1. [sklearn](https://scikit-learn.org/stable/)
+2. [matplotlib](https://matplotlib.org/)
+3. [seaborn](https://seaborn.pydata.org/)
+4. [Flask](https://flask.palletsprojects.com/en/2.2.x/)
+5. [pandas](https://pandas.pydata.org/)
+6. [numpy](https://numpy.org/)
+7. [pickle](https://docs.python.org/3/library/pickle.html)
