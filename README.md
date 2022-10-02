@@ -1,6 +1,6 @@
 ## Boston Housing Data
 ## Software and Tools Requirements 
-1. [VSCODEIDE](https://code.visualstudio.com/download)
+1. [VS_CODE_IDE](https://code.visualstudio.com/download)
 2. [Github_Account](www.github.com)
 3. [Heroku](https://www.heroku.com/)
 4. [Git](https://git-scm.com/download/win)
