@@ -1,13 +1,29 @@
 import pickle
-from Flask import Flask,request,app,jsonify,url_for,render_templates
+from flask import Flask
+from flask import request,app,jsonify,url_for,render_template
+from django.shortcuts import render 
 import numpy as np
 import pandas as pd
 
 ##Load the model
 app=Flask(__name__)
-model=pickel.load(open('Boston_housing_data\model.pkl','rb'))
+regmodel=pickle.load(open("model.pkl",'rb'))
+scalar=pickle.load(open('scaling.pkl',"rb"))
 
 @app.route('/') 
 def home():
-    return render_templates('home.html')
-    
+    return render_template("home.html")
+@app.route('/predict_api',methods=['POST'])
+
+def predict_api():
+    data=request.json['data']
+    print(data)
+    print(np.array(list(data.values())).reshape(1,-1))
+    new_data=scalar.transform((np.array(list(data.values())).reshape(1,-1)))
+    output=regmodel.predict(new_data)
+    print(output[0])
+    return jsonify(output[0])
+
+if __name__=='__main__':
+    app.run(debug=True)
+
