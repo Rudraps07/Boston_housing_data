@@ -1,6 +1,6 @@
 ## Boston Housing Data
 ## Software and Tools Requirements 
-1. [VS_CODE_IDE](https://code.visualstudio.com/download)
+1. [VSCODEIDE](https://code.visualstudio.com/download)
 2. [Github_Account](www.github.com)
 3. [Heroku](https://www.heroku.com/)
 4. [Git](https://git-scm.com/download/win)
@@ -19,3 +19,4 @@ conda create -p venv python==3.7 -y
 5. [pandas](https://pandas.pydata.org/)
 6. [numpy](https://numpy.org/)
 7. [pickle](https://docs.python.org/3/library/pickle.html)
+8. [Gunicorn](https://gunicorn.org/)
